@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ganonside/learn-algebraic-notation.git"
+    "url": "git+https://github.com/Ganonside/learn-algebraic-notation.git"
   },
   "keywords": [
     "chess"
@@ -16,7 +16,7 @@
   "author": "Jon Horner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ganonside/learn-algebraic-notation/issues"
+    "url": "https://github.com/Ganonside/learn-algebraic-notation/issues"
   },
-  "homepage": "https://github.com/ganonside/learn-algebraic-notation#readme"
+  "homepage": "https://github.com/Ganonside/learn-algebraic-notation#readme"
 }
