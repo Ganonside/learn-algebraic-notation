@@ -1,0 +1,22 @@
+{
+  "name": "learn-algebraic-notation",
+  "version": "0.0.1",
+  "description": "An interactive experience attempting to help chess players learn algebraic notation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganonside/learn-algebraic-notation.git"
+  },
+  "keywords": [
+    "chess"
+  ],
+  "author": "Jon Horner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganonside/learn-algebraic-notation/issues"
+  },
+  "homepage": "https://github.com/ganonside/learn-algebraic-notation#readme"
+}
