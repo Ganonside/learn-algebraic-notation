@@ -4,6 +4,8 @@
   "description": "An interactive experience attempting to help chess players learn algebraic notation",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --progress --colors",
+    "start": "webpack --progress --colors --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,12 +13,25 @@
     "url": "git+https://github.com/Ganonside/learn-algebraic-notation.git"
   },
   "keywords": [
-    "chess"
+    "chess",
+    "react",
+    "rxjs"
   ],
   "author": "Jon Horner",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ganonside/learn-algebraic-notation/issues"
   },
-  "homepage": "https://github.com/Ganonside/learn-algebraic-notation#readme"
+  "homepage": "https://github.com/Ganonside/learn-algebraic-notation#readme",
+  "dependencies": {
+    "react": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
 }
