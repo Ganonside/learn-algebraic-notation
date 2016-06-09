@@ -1,5 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var Webpack = require('webpack');
+var path = require('path');
 
  module.exports = {
   entry: {
@@ -13,8 +14,14 @@ var Webpack = require('webpack');
     loaders: [
       {
         test: /\.jsx?$/,
-        include: [ path.resolve(__dirname, 'src') ],
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'index.js')
+        ],
         loader: 'babel',
+        query: {
+          presets: [ 'es2015', 'react' ],
+        }
       },
       {
         test: /\.(?:c|le)ss$/,
@@ -24,6 +31,6 @@ var Webpack = require('webpack');
     ]
   },
   plugins: [
-    new ExtractTextPlugin('[name].css');
+    new ExtractTextPlugin('[name].css')
   ],
  };
