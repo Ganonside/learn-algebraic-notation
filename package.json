@@ -26,7 +26,8 @@
   "homepage": "https://github.com/Ganonside/learn-algebraic-notation#readme",
   "dependencies": {
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "svg-to-react": "^0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
@@ -36,7 +37,9 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "react-svg-loader": "^1.0.1",
     "style-loader": "^0.13.1",
+    "svg-to-react-loader": "0.0.2",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }

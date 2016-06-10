@@ -28,6 +28,18 @@ var path = require('path');
         include: [ path.resolve(__dirname, 'styles') ],
         loader: ExtractTextPlugin.extract('style!less'),
       },
+      {
+        test: /\.svg$/,
+        include: [ path.resolve(__dirname, 'sprites') ],
+        loader: 'react-svg',
+        query: {
+          es5: true,
+          svgo: {
+            plugins: [{removeTitle: false}],
+            floatPrecision: 2
+          }
+        }
+      },
     ]
   },
   plugins: [
