@@ -12,8 +12,10 @@ export default class Square extends BaseComponent {
   }
 
   render() {
+    const bgColor = (this.props.rank + this.props.file) % 2 === 0 ? "light" : "dark";
+
     return (
-      <div class="square">
+      <div classname={`square ${bgColor}`}>
         <King isWhite={true} />
       </div>
     )

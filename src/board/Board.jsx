@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseComponent from '../BaseComponent.jsx';
-import Square from './Square.jsx';
+import Rank from './Rank.jsx';
 
 export default class Board extends BaseComponent {
   constructor() {
@@ -8,9 +8,15 @@ export default class Board extends BaseComponent {
   }
 
   render() {
+    let ranks = [];
+
+    for (let rank = 1; rank <= 8; ++rank) {
+      ranks.push(<Rank key={`rank${rank}`} rank={rank} />);
+    }
+
     return (
       <div classname="board">
-        <Square rank={1} file={1} />
+        {ranks.map((rank) => rank)}
       </div>
     );
   }

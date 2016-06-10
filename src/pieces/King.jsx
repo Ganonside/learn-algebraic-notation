@@ -3,6 +3,7 @@ import Piece from './Piece.jsx';
 
 // import Sprites from '../../sprites/sprites.js';
 import WhiteKingSprite from '../../sprites/whiteKing.svg';
+import BlackKingSprite from '../../sprites/blackKing.svg';
 
 const { bool } = PropTypes;
 
@@ -15,8 +16,8 @@ export default class King extends Piece {
 
   render() {
     return (
-      <div class="king">
-        <WhiteKingSprite />
+      <div classname="piece king">
+        {this.props.isWhite ? <WhiteKingSprite /> : <BlackKingSprite />}
       </div>
     )
   }
